@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
+
+:root {
+    --main-text-color: #646464;
+    --heading-text-color: #3c3b3b;
+    --a-hover-color: #3f51b5;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html body,
+input,
+select,
+textarea {
+    color: var(--main-text-color);
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 14pt;
+    font-weight: 400;
+    line-height: 1.75;
+    margin: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading-text-color);
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+    line-height: 1.65;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+h2 span {
+    display: block;
+    font-size: 0.5em;
+    color: whitesmoke;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    border-bottom: solid 1px #b9b4b4;
+    height: 5em;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+}
+
+#my-image {
+    max-width: auto;
+    height: 100px;
+}
+
+#header {
+    display: flex;
+    background-color: #ffffff;
+    border-bottom: solid 1px #b9b4b4;
+    height: 3.5em;
+    left: 0;
+    line-height: 3.5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+#header h1 {
+    height: inherit;
+    line-height: inherit;
+    padding: 0 0 0 1em;
+    white-space: nowrap;
+    font-size: 1.25em;
+}
+
+#header .links {
+    flex: 1;
+
+    height: inherit;
+    line-height: inherit;
+    margin-left: 1.5em;
+    overflow: hidden;
+    padding-left: 1.5em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+a:before {
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    border-bottom-color: transparent;
+    color: var(--a-hover-color) !important;
+}
+
+a:hover:before {
+    color: var(--a-hover-color) !important;
+}
+
+#header ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    flex: 5;
+}
+
+.right-align {
+    text-align: right !important;
+    margin-right: 2em;
+}
+
+#header .links ul li {
+    display: inline-block;
+    border-left: solid 1px black;
+    margin-left: 1em;
+    padding-left: 1em;
+    line-height: 1;
+}
+
+#header .links ul li:first-child {
+    border-left: none;
+}
+
+#header .links ul li a {
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: .8em;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+#personal-information {
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    padding: 4.5em;
+    margin: 0 auto;
+
+}
+
+.white {
+    background-color: #f4f4f4 !important
+}
+
+.text-dark-gray {
+    color: #3a3a3a !important;
+}
+
+.center {
+    display: inline-block;
+    width: auto
+}
+
+.container {
+    display: flex;
+    transition: opacity 0.5s ease;
+    margin: 0 auto;
+    max-width: 100%;
+    opacity: 1;
+    padding: 4.5em;
+}
+
+.full-height {
+    padding-top: 10vh;
+    height: 100vh;
+    margin-top: -2.5em;
+}
+
+#personal-information {
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#personal-information .detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1.2em;
+}
+
+#personal-information span {
+    flex: 2;
+    font-size: 2em;
+    margin-bottom: 1em;
+    letter-spacing: 0.2em;
+
+}
+
+#personal-information small {
+    height: inherit;
+    line-height: inherit;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+#personal-information img {
+    max-height: 400px;
+
+    object-fit: cover;
+}
+
+#personal-information h4 {
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+#personal-information h3 {
+    margin: 0;
+    font-size: .8em;
+    letter-spacing: 0.1em;
+}
+
+#details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+#educational-background {
+    padding: 100px 200px;
+    background-color: #616161;
+    color: #ffffff;
+}
+
+#educational-background .border-design {
+    width: 100%;
+    border: 2px solid #ffffff;
+    padding: 100px 50px;
+    margin-top: -3.5em;
+}
+
+#educational-background .border-design h1,
+#educational-background .border-design h3 {
+    color: #ffffff;
+}
+
+#educational-background .education {
+    display: flex;
+    flex-direction: row;
+}
+
+#educational-background .education .education-description {
+    margin: 2em;
+}
+
+#educational-background .education img {
+    height: 200px;
+}
+
+
+#educational-background .education i,
+p {
+    color: inherit;
+    font-family: "Raleway", Helvetica, sans-serif;
+}
+
+#technical-skills {
+    background-color: #f4f4f4;
+    padding: 9em;
+    display: flex;
+    flex-direction: column;
+}
+
+#technical-skills h1 {
+    text-align: center;
+    margin-top: -4.5em;
+}
+
+#technical-skills h2 {
+    color: #616161;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 3em;
+}
+
+
+#technical-skills .tech-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#technical-skills .tech-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 5em;
+}
+
+#technical-skills .tech-container i {
+    font-size: 8em;
+    color: #3c3b3b;
+}
+
+#technical-skills .tech-container span {
+    color: var(--heading-text-color);
+    font-family: "Raleway", Helvetica, sans-serif;
+    letter-spacing: 0.25em;
+    margin: 1em 0 0 0;
+    text-transform: uppercase;
+    color: #3c3b3b;
+}
+#technical-skills .border-design {
+    width: 100%;
+    border: 2px solid #616161;
+    padding: 25px 30px;
+    margin-bottom: -3em;
+    margin-left: -3em;
+    justify-content: center;
+}
+#technical-skills .tech-container .tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#technical-skills .tech-container i:hover {
+    transition: ease-in 0.2s;
+    color: #2ebaae;
+}
+
+#hobbies {
+    padding: 100px 200px;
+    background-color: #616161;
+    color: #ffffff;
+    text-align: center;
+}
+
+#hobbies .border-design {
+    width: 100%;
+    border: 2px solid #ffffff;
+    padding: 100px 50px;
+    margin-top: -3.5em;
+}
+#hobbies h1 {
+    color: #f4f4f4;
+    font-size: 3.2em;
+    text-decoration: underline;
+    margin-top: -1em;
+    margin-bottom: 2.2em;
+}
+#hobbies h2 {
+    color: #f4f4f4;
+    font-size: 2.2em;
+    margin-top: -2em;
+    letter-spacing: 0.1em;
+    margin-bottom: 2.5em;
+}
+.my-container {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 4px 8px;
+    text-align: center;
+}
+
+.my-black,
+.my-hover-black:hover {
+    color: #f4f4f4 !important;
+    background-color: black !important;
+
+}
+
+.my-white {
+    color: #f4f4f4 !important;
+    background-color: #b9b4b4 !important;
+    margin-top: -2em;
+    margin-bottom: 4em;
+}

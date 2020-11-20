@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
+
+:root {
+    --main-text-color: #646464;
+    --heading-text-color: #3c3b3b;
+    --a-hover-color: #3f51b5;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  html
+  body,
+  input,
+  select,
+  textarea {
+    color: var(--main-text-color);
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 14pt;
+    font-weight: 400;
+    line-height: 1.75;
+    margin: 0;
+  }
+  
+  body{
+      background-color: #f4f4f4;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--heading-text-color);
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+    line-height: 1.65;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+  }
+  h2 {
+      font-size: 1.5em;
+      color: whitesmoke;
+  }
+  h2 span {
+      display: block;
+    font-size: 0.5em;
+    color: whitesmoke;
+}
+  footer {
+      display: flex;
+    background-color: black;
+    border-bottom: solid 1px #b9b4b4;
+    height: 5em;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+  }
+  #header {
+    display: flex;
+    background-color: #ffffff;
+    border-bottom: solid 1px #b9b4b4;
+    height: 3.5em;
+    left: 0;
+    line-height: 3.5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+  }
+  #header h1 {
+    height: inherit;
+    line-height: inherit;
+    padding: 0 0 0 1em;
+    white-space: nowrap;
+    font-size: 1.25em;
+  }
+
+  #header .links {
+    flex: 1;
+    
+    height: inherit;
+    line-height: inherit;
+    margin-left: 1.5em;
+    overflow: hidden;
+    padding-left: 1.5em;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .links a{
+      text-decoration: underline;
+  }
+  
+  a:before {
+    transition: color 0.2s ease;
+  }
+  
+  a:hover {
+    border-bottom-color: transparent;
+    color: var(--a-hover-color) !important;
+  }
+  
+  a:hover:before {
+    color: var(--a-hover-color) !important;
+  }
+  
+  #header ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    flex: 5;
+  }
+  .right-align {
+    text-align: right!important;
+    margin-right: 2em;
+}
+  
+  #header .links ul li {
+      display: inline-block;
+      border-left: solid 1px black;
+      margin-left: 1em;
+      padding-left: 1em;
+      line-height: 1;
+  }
+  
+#header .links ul li:first-child {
+      border-left: none;
+}
+#header .links ul li a {
+      font-family: "Raleway", Helvetica, sans-serif;
+      font-size: .8em;
+      font-weight: 400;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+}
+#container {
+    position: absolute;
+    text-align: center;
+    margin-top: -4em;
+    color: var(--main-text-color);
+  }
+#container .quote {
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    color: white;
+}
+#container .author {
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: 0.2em;
+    display: block;
+    color: white;
+}
+#container .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+img {
+    vertical-align: middle;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding:0;
+    left:0;
+    top:0;
+    
+}
+ 
